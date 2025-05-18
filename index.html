@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>شركة الدلتا للاستشارات الهندسية والمقاولات العامة</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #0d2c40;
+        --secondary: #d4af37;
+        --accent: #d4af37;
+        --background: #0d2c40;
+        --white: #ffffff;
+        --text-dark: #d4af37;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Cairo", sans-serif;
+      }
+
+      body {
+        background-color: var(--background);
+        color: var(--text-dark);
+        line-height: 1.8;
+      }
+
+      header {
+        background: linear-gradient(to left, var(--primary), #05151f);
+        color: var(--secondary);
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+
+      .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo {
+        height: 100px;
+        margin-bottom: 1rem;
+        border-radius: 50%;
+      }
+
+      h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+      }
+
+      .container {
+        width: 95%;
+        max-width: 1400px;
+        margin: auto;
+        padding: 2rem 0;
+      }
+
+      .hero {
+        background-color: var(--white);
+        padding: 2.5rem;
+        border-radius: 16px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        margin-bottom: 3rem;
+        color: var(--primary);
+      }
+
+      .hero h2 {
+        color: var(--primary);
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .projects-section h2,
+      .branches-section h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: var(--accent);
+        margin-bottom: 2rem;
+        position: relative;
+      }
+
+      .projects-section h2::after,
+      .branches-section h2::after {
+        content: "";
+        position: absolute;
+        width: 90px;
+        height: 4px;
+        background-color: var(--white);
+        bottom: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2.5rem;
+        margin-top: 2rem;
+      }
+
+      .project {
+        background-color: white;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        transition: transform 0.3s ease;
+      }
+
+      .project:hover {
+        transform: translateY(-8px);
+      }
+
+      .project img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .project-info {
+        padding: 1.2rem;
+        color: var(--primary);
+      }
+
+      .project-info h3 {
+        color: var(--secondary);
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .branches {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+        justify-content: center;
+      }
+
+      .branch {
+        background-color: white;
+        padding: 1.8rem;
+        border-radius: 14px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        color: var(--primary);
+      }
+
+      .branch h3 {
+        color: var(--primary);
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .cta {
+        text-align: center;
+        margin: 4rem 0;
+      }
+
+      .cta-button {
+        background-color: var(--accent);
+        color: var(--primary);
+        padding: 1rem 2.5rem;
+        border-radius: 40px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-button:hover {
+        background-color: #f1cc63;
+      }
+
+      footer {
+        background-color: var(--primary);
+        color: var(--secondary);
+        text-align: center;
+        padding: 2rem 0;
+        margin-top: 3rem;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #f1cc63;
+      }
+
+      @media (min-width: 768px) {
+        .branches {
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="./pic/Eldelta Logo.jpg" alt="شعار شركة الدلتا" class="logo" />
+        <h1>شركة الدلتا للاستشارات الهندسية والمقاولات العامة</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="hero">
+        <h2>خبرة تمتد لأكثر من 15 عامًا في التميز الهندسي</h2>
+        <p>
+          نقدم حلولاً هندسية ومقاولات متكاملة بخبرة تتجاوز 15 عامًا. نضمن أعلى
+          معايير الجودة والالتزام بالمواعيد والكفاءة في التنفيذ.
+        </p>
+      </section>
+
+      <section class="projects-section">
+        <h2>أحدث أعمالنا</h2>
+        <div class="projects">
+          <div class="project">
+            <img src="./pic/first project1.jpg" alt="مشروع سكني" />
+            <div class="project-info">
+              <h3>القطعة (٥٦٤)-شمال الخامس-الشمالية</h3>
+              <p>إستكمال أعمال التشطيبات الخارجية</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="./pic/project2.jpg" alt="مشروع تجاري" />
+            <div class="project-info">
+              <h3>عمارة (١٢٣)-م٣-خ المتميز-مدينة بدر</h3>
+              <p>أعمال المباني</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="./pic/project3.jpg" alt="مشروع صناعي" />
+            <div class="project-info">
+              <h3>قطعة (٥٦٤)-شمال الحي الخامس -مدينة بدر.</h3>
+              <p>إستكمال أعمال التشطيبات الخارجية</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="branches-section">
+        <h2>فروعنا</h2>
+        <div class="branches">
+          <div class="branch">
+            <h3>فرع العبور الجديدة</h3>
+            <p>تليفون: 010 02057078</p>
+          </div>
+          <div class="branch">
+            <h3>فرع مدينة بدر</h3>
+            <p>شارع الجامعه الروسيه . امام ميدان الجامعه</p>
+            <p>تليفون: 010 02057078</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="cta">
+        <a href="#contact" class="cta-button">احجز استشارتك المجانية الآن</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        جميع الحقوق محفوظة &copy; 2025 شركة الدلتا للاستشارات الهندسية
+        والمقاولات العامة
+      </p>
+    </footer>
+  </body>
+</html>
